@@ -7,10 +7,11 @@
         android:id="@+id/kytucautl"
         android:gravity="center"
         android:background="@drawable/traloi"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:text="A"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
         android:textStyle="bold"/>
 </LinearLayout>

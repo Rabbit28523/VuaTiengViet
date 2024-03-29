@@ -50,7 +50,7 @@ public class CSDL {
     }
     public CauHoi HienCSDL(Context context){
         Cursor dataCV=db.GetData("SELECT * FROM CauHoi WHERE TinhTrang = 0 LIMIT 1");
-        CauHoi cauHoi=null;
+        CauHoi cauHoi;
         if (dataCV != null && dataCV.moveToFirst()) {
             int id = dataCV.getInt(0);
             String tu = dataCV.getString(1);
@@ -58,6 +58,9 @@ public class CSDL {
             int tinhTrang = dataCV.getInt(3);
             cauHoi= new CauHoi(id, tu, dapAn, tinhTrang);
 //            Toast.makeText(context, "id: " + dataCV.getInt(0) + "dapan: " + dataCV.getString(2), Toast.LENGTH_SHORT).show();
+        }
+        else {
+            cauHoi= new CauHoi(-1,"aa","bb",0);
         }
         return cauHoi;
     }
