@@ -45,7 +45,7 @@ public class CSDL {
             db.QueryData("INSERT INTO CauHoi  VALUES (null,'c/C/ắ/h/n/c/h/ắ', 'Chắc chắn', 0)");
             db.QueryData("INSERT INTO CauHoi  VALUES (null,'á/K/ả/i/h/g', 'Khá giả', 0)");
             db.QueryData("INSERT INTO CauHoi  VALUES (null,'T/á/h/ệ/p/r/t/i', 'Triệt phá', 0)");
-            db.QueryData("INSERT INTO CauHoi  VALUES (null,'T/á/n/h/a/d', 'lan can', 0)");
+            db.QueryData("INSERT INTO CauHoi  VALUES (null,'L/a/a/n/n/c', 'lan can', 0)");
         }
     }
     public CauHoi HienCSDL(Context context){
