@@ -1,174 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="250dp"
-    android:layout_height="250dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="600dp"
     android:orientation="vertical"
-    android:background="@drawable/khung">
-    <LinearLayout
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:orientation="vertical"
-        android:background="@drawable/cuahang">
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/delete"
-        android:layout_marginBottom="-28dp"
-        android:layout_marginTop="-3dp"
-        android:layout_marginLeft="223dp"/>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_width="180dp"
-        android:layout_height="170dp"
-        android:background="@drawable/cuahang1"
-        android:layout_marginTop="55dp">
-        <RelativeLayout
-            android:background="@drawable/cuahang2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="160dp"
-            android:layout_height="30dp">
-            <ImageView
-                android:layout_centerVertical="true"
-                android:id="@+id/anh"
-                android:background="@drawable/diamond1"
-                android:layout_width="25dp"
-                android:layout_marginLeft="5dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"/>
+    android:background="#00FFFFFF">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="540dp"
+        android:id="@+id/shop"
+        android:background="@drawable/nen_cuahang">
+        <LinearLayout
+            android:background="@drawable/khungtien"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="220dp"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
             <TextView
-                android:layout_toRightOf="@+id/anh"
-                android:layout_marginLeft="10dp"
+                android:id="@+id/tien"
+                android:layout_marginLeft="65dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="25 Ruby"
-                android:layout_centerVertical="true"
+                android:text="250"
+                android:layout_gravity="center"
                 android:textStyle="bold"
-                android:textSize="13dp"
-                android:textColor="#FF9800"/>
+                android:layout_marginTop="2dp"
+                android:textSize="22dp"
+                android:textColor="#FF9C07"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginLeft="60dp"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="213dp">
+            <ImageView
+                android:id="@+id/ruby1"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ruby1"/>
             <TextView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:text="20k"
-                android:textColor="#FF5722"
-                android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:layout_alignParentRight="true"
-                android:textSize="11dp"
+                android:id="@+id/txt_ruby1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ruby1"
+                android:text="10 ruby"
+                android:textColor="#E6780D"
                 android:textStyle="bold"
-                android:background="@drawable/mess1"
-                android:backgroundTint="@color/white"/>
+                android:textSize="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/txt_ruby1"
+                android:id="@+id/video_ruby"
+                android:background="@drawable/icon_shopvideo"
+                android:layout_marginLeft="60dp"/>
         </RelativeLayout>
         <RelativeLayout
-            android:background="@drawable/cuahang2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="160dp"
-            android:layout_height="30dp">
+            android:layout_marginLeft="60dp"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="283dp">
             <ImageView
-                android:layout_marginLeft="5dp"
-                android:layout_centerVertical="true"
-                android:id="@+id/anh2"
-                android:background="@drawable/money"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_toRightOf="@+id/anh2"
+                android:id="@+id/ruby2"
                 android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ruby2"/>
+            <TextView
+                android:id="@+id/txt_ruby2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="150 Ruby"
-                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ruby2"
+                android:text="100 ruby"
+                android:textColor="#E6780D"
                 android:textStyle="bold"
-                android:textSize="13dp"
-                android:textColor="#FF9800"/>
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:textSize="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
                 android:text="20k"
-                android:textColor="#FF5722"
-                android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:layout_alignParentRight="true"
-                android:textSize="11dp"
+                android:textSize="21dp"
                 android:textStyle="bold"
-                android:background="@drawable/mess1"
-                android:backgroundTint="@color/white"/>
+                android:textColor="#F65430"
+                android:layout_toRightOf="@id/txt_ruby2"
+                android:id="@+id/ruby_20k"
+                android:background="@drawable/but_shop"
+                android:layout_marginLeft="20dp"/>
         </RelativeLayout>
         <RelativeLayout
-            android:background="@drawable/cuahang2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="160dp"
-            android:layout_height="30dp">
+            android:layout_marginLeft="60dp"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="353dp">
             <ImageView
-                android:id="@+id/anh3"
-                android:background="@drawable/diamond2"
-                android:layout_width="35dp"
-                android:layout_centerVertical="true"
-                android:layout_height="35dp"
-                android:layout_gravity="center"/>
+                android:id="@+id/ruby3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ruby3"/>
             <TextView
-                android:layout_toRightOf="@+id/anh3"
-                android:layout_marginLeft="5dp"
+                android:id="@+id/txt_ruby3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="500 Ruby"
-                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ruby3"
+                android:text="300 ruby"
+                android:textColor="#E6780D"
                 android:textStyle="bold"
-                android:textSize="13dp"
-                android:textColor="#FF9800"/>
+                android:textSize="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="50k"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:textColor="#F65430"
+                android:layout_toRightOf="@id/txt_ruby3"
+                android:id="@+id/ruby_50k"
+                android:background="@drawable/but_shop"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="60dp"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="423dp">
+
+            <ImageView
+                android:id="@+id/ruby4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ruby4" />
+
             <TextView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:id="@+id/txt_ruby4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ruby4"
+                android:text="800 ruby"
+                android:textColor="#E6780D"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_marginTop="3dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
                 android:text="100k"
-                android:textColor="#FF5722"
-                android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:layout_alignParentRight="true"
-                android:textSize="11dp"
+                android:textSize="21dp"
                 android:textStyle="bold"
-                android:background="@drawable/mess1"
-                android:backgroundTint="@color/white"/>
+                android:textColor="#F65430"
+                android:layout_toRightOf="@id/txt_ruby4"
+                android:id="@+id/ruby_100k"
+                android:background="@drawable/but_shop"
+                android:layout_marginLeft="20dp"/>
         </RelativeLayout>
-        <RelativeLayout
-            android:background="@drawable/cuahang2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="160dp"
-            android:layout_height="30dp">
-            <ImageView
-                android:layout_centerVertical="true"
-                android:id="@+id/anh4"
-                android:background="@drawable/diamond3"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_toRightOf="@+id/anh4"
-                android:layout_marginLeft="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2000 Ruby"
-                android:layout_centerVertical="true"
-                android:textStyle="bold"
-                android:textSize="13dp"
-                android:textColor="#FF9800"/>
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:text="500k"
-                android:textColor="#FF5722"
-                android:gravity="center"
-                android:layout_marginRight="10dp"
-                android:layout_alignParentRight="true"
-                android:textSize="11dp"
-                android:textStyle="bold"
-                android:background="@drawable/mess1"
-                android:backgroundTint="@color/white"/>
-        </RelativeLayout>
-    </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/cham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Chạm để thoát"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic">
+    </TextView>
+</RelativeLayout>

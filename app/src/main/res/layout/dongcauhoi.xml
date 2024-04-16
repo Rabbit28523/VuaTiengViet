@@ -7,12 +7,10 @@
         android:id="@+id/kytu"
         android:textAlignment="center"
         android:gravity="center"
-        android:layout_marginLeft="5dp"
-        android:background="@drawable/ochu"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:text="A"
-        android:textColor="@color/black"
+        android:background="@drawable/nen_cauhoi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textColor="#004AAD"
         android:textSize="20dp"
         android:textStyle="bold"/>
 </LinearLayout>

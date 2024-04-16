@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     android:layout_width="wrap_content"
-    android:layout_height="300dp"
-    android:background="#00FFFFFF"
-    >
+    android:layout_height="450dp"
+    android:background="#00FFFFFF">
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="235dp"
+        android:layout_height="370dp"
         android:id="@+id/shopp"
         android:background="@drawable/back_setting">
-
     </RelativeLayout>
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/titlie_set"
-        android:id="@+id/title"
-        android:scaleType="fitCenter"
-        android:layout_gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
    <RelativeLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/nhacback1"
-       android:layout_below="@+id/title"
+       android:layout_marginTop="170dp"
        android:layout_centerHorizontal="true">
        <ImageView
-           android:layout_width="40dp"
-           android:layout_height="40dp"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
            android:id="@+id/nhacback"
-           android:src="@drawable/nhacnen"
+           android:src="@drawable/icon_loa"
            >
        </ImageView>
        <SeekBar
+           android:layout_marginRight="20dp"
            android:layout_toRightOf="@+id/nhacback"
            android:layout_width="185dp"
            android:id="@+id/seek1"
@@ -52,22 +40,20 @@
         android:layout_below="@+id/nhacback1"
         android:layout_centerHorizontal="true">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/nhacxb"
-            android:src="@drawable/volume"
-            >
+            android:src="@drawable/icon_mic">
         </ImageView>
         <SeekBar
+            android:layout_marginRight="20dp"
             android:id="@+id/seek2"
             android:layout_toRightOf="@+id/nhacxb"
             android:layout_width="185dp"
             android:layout_centerVertical="true"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
         </SeekBar>
     </RelativeLayout>
-
     <TextView
         android:id="@+id/cham"
         android:layout_width="match_parent"

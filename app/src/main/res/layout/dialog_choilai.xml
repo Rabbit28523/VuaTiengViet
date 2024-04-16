@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
+    android:background="#00FFFFFF">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/shopp"
+        android:background="@drawable/nen_choilai">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="120dp"
+            android:text="Bạn có muốn chơi lại?"
+            android:textColor="#FFAB00"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:id="@+id/tieude"/>
+        <RelativeLayout
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_alignTop="@+id/tieude">
+            <Button
+                android:id="@+id/xacnhan"
+                android:layout_marginLeft="50dp"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Chấp nhận"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:background="@drawable/nenbutchoingay"/>
+            <Button
+                android:layout_toRightOf="@+id/xacnhan"
+                android:id="@+id/huy"
+                android:layout_marginLeft="35dp"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Từ chối"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:background="@drawable/nenbutthoat"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/cham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Chạm để thoát"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic">
+    </TextView>
+</RelativeLayout>

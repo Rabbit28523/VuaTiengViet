@@ -25,11 +25,11 @@ public class CauHoiAdapter extends RecyclerView.Adapter<CauHoiAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull CauHoiAdapter.ViewHolder holder, int i) {
         if("".equalsIgnoreCase(list.get(i).toUpperCase().trim())){
-            holder.kytu.setBackgroundResource(R.drawable.ochu);
+            holder.kytu.setBackgroundResource(R.drawable.nen_cauhoi);
             holder.kytu.setText("");
         }
         else {
-            holder.kytu.setBackgroundResource(R.drawable.ochu);
+            holder.kytu.setBackgroundResource(R.drawable.nen_dapan);
             holder.kytu.setText(list.get(i));
         }
 
