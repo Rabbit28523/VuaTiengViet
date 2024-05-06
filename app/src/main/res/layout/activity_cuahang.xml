@@ -126,7 +126,6 @@
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="-5dp"
                         android:src="@drawable/item_ruby_1"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -152,7 +151,6 @@
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="-5dp"
                         android:src="@drawable/item_ruby_2"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -182,7 +180,6 @@
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="-5dp"
                         android:src="@drawable/item_ruby_3"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -212,7 +209,6 @@
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="-5dp"
                         android:src="@drawable/item_ruby_4"/>
                     <TextView
                         android:layout_width="wrap_content"
